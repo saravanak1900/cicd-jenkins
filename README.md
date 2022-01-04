@@ -5,10 +5,10 @@
 
 ```
 sudo -i
-wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
-
-rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+wget -O /etc/yum.repos.d/jenkins.repo  https://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+yum upgrade
+yum install epel-release java-11-openjdk-devel
 yum install jenkins -y
-
-systemctl restart jenkins;systemctl enable jenkins;systemctl status jenkins
+systemctl daemon-reload
 ```
