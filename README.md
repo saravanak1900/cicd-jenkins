@@ -3,6 +3,8 @@
 ### Install STABLE LTS Jenkins 
 ####################################
 
+https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos
+
 ```
 sudo -i
 wget -O /etc/yum.repos.d/jenkins.repo  https://pkg.jenkins.io/redhat-stable/jenkins.repo
